@@ -1,0 +1,507 @@
+@font-face {
+  font-family: "Kaushan_Script";
+  src: url("/assest/fonts/KaushanScript-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/assest/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/assest/fonts/MontserratSubrayada-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/assest/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #999;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title b {
+  display: block;
+  text-transform: none;
+  font-weight: 400;
+  font-family: "Kaushan_Script";
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.title h2 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.title h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background: #f38181;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+}
+
+.title p {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 40px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.border {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 50px 0;
+}
+
+.containerz {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header {
+  height: 100vh;
+  background-image: url("/assest/images/bg-header.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  margin-bottom: 6rem;
+}
+
+header::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9)));
+  background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+  position: absolute;
+  z-index: -1;
+}
+
+header nav {
+  z-index: 5;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+header nav .fixed {
+  top: .2rem;
+  position: relative;
+}
+
+header nav ul {
+  position: absolute;
+  right: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+header nav ul li {
+  margin: 1.1rem 0;
+  margin-right: 2rem;
+  color: #fff;
+}
+
+header nav .logo a {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  margin-top: 1.1rem;
+}
+
+header .navScroll .fixed {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))) !important;
+  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)) !important;
+  top: 0rem !important;
+  position: fixed !important;
+}
+
+header .hero {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 8rem;
+}
+
+.slideshow-container {
+  position: relative;
+}
+
+.carouselParent {
+  border: none !important;
+  outline: none !important;
+}
+
+.carouselBg {
+  background-color: none;
+  border: none !important;
+  outline: none !important;
+  text-align: center;
+}
+
+.carouselBg .c2_img img {
+  border-radius: 50%;
+}
+
+.carouselBg h4 {
+  font-family: "Kaushan_Script", cursive;
+  font-size: 3.438rem;
+}
+
+.carouselBg h1 {
+  font-size: 6.875rem;
+  font-weight: 800;
+  color: #fff;
+  font-family: "Montserrat-Bold";
+}
+
+.aboutUs {
+  margin-bottom: 6rem;
+}
+
+.backgroundAbout {
+  background-color: #95E1D3;
+}
+
+.backgroundAbout .box {
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.backgroundAbout .box img {
+  width: 100%;
+}
+
+.backgroundAbout .box .overlayAbout {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9)));
+  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.backgroundAbout .box:hover {
+  left: -10px;
+  top: -10px;
+}
+
+.backgroundAbout .box:hover .overlayAbout {
+  opacity: 1;
+}
+
+.number {
+  background-color: #95e1d3;
+  margin-bottom: 6rem;
+}
+
+.number .num_item {
+  padding: 60px 5px;
+  border-right: 1px solid rgba(255, 255, 255, 0.35);
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+}
+
+.number .num_item .num_item_num {
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.number .num_item .num_item_text {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.Services {
+  margin-bottom: 6rem;
+}
+
+.Services .Services_wrapper .Services_cards .Services_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Services .Services_wrapper .Services_cards .Services_item .Services_item_text {
+  margin-left: 20px;
+}
+
+.Services .Services_wrapper .Services_cards .Services_item .Services_item_text h4 {
+  font-weight: 600;
+  font-size: 15px;
+  color: #333;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Services .Services_wrapper .Services_cards .Services_item .Services_item_text p {
+  color: #999;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.devices {
+  margin-bottom: 6rem;
+  padding-top: 50px;
+  background-image: url("/assest/images/unique-design/bg-unique-design.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.devices .devices_warpper .devices_imgs {
+  position: relative;
+}
+
+.devices .devices_warpper .devices_imgs .uni2 {
+  position: absolute;
+  top: 30%;
+  right: 20%;
+}
+
+.ourTeam {
+  margin-bottom: 6rem;
+}
+
+.ourTeam .about__container {
+  margin-bottom: 20px;
+}
+
+.ourTeam .socailCard i {
+  font-size: 1.5rem;
+  margin-right: 0.1rem;
+  color: #f08080;
+  background-color: #ffd900;
+  padding: 10px 0;
+  width: 3rem;
+  text-align: center;
+}
+
+.ourTeam .brand {
+  margin-top: 5rem;
+  background-color: #f8f8f8;
+  padding: 2rem 0;
+}
+
+.ourWork .ourWorkImgs {
+  margin-bottom: 20px;
+}
+
+.ourWorkSlide {
+  padding: 5rem 0;
+}
+
+.inn {
+  padding: 0 7rem;
+}
+
+.c2_text {
+  padding: 0 1rem;
+}
+
+.c2_text q {
+  display: block;
+  margin-top: 30px;
+}
+
+.c2_text b {
+  color: #f08080;
+}
+
+.c2_img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.clients {
+  margin-bottom: 6rem;
+  background: url(/assest/images/happy-client/bg-happy-client.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 0;
+  padding-bottom: 8rem;
+}
+
+.clients .client_wrapper .client_card .card_client_img img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.blog {
+  margin-bottom: 6rem;
+}
+
+.blog .bolgWarpperCards .blog_card .img_blog_card {
+  margin-bottom: 1.5rem;
+}
+
+.blog .bolgWarpperCards .blog_card .img_blog_card img {
+  width: 100%;
+}
+
+.blog .bolgWarpperCards .blog_card .blog_card_text h4 {
+  color: #2ec06c;
+}
+
+.blog .bolgWarpperCards .blog_card .blog_card_text p {
+  opacity: 0.5;
+}
+
+.blog .bolgWarpperCards .blog_card .blog_card_text .blog_card_text_icon span {
+  color: #2ec06c;
+  margin-right: 1.5rem;
+}
+
+.map {
+  background-color: #F8F8F8;
+}
+
+.map .bg_map {
+  background-image: url("/assest/images/map/bg-map.jpg") !important;
+  padding: 2rem 0;
+}
+
+.map .bg_map i {
+  font-size: 2.2rem;
+  color: #f08080;
+  margin-bottom: 1rem;
+}
+
+.map .map_mego_warpper .map_left h4 {
+  color: #ccc;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 20px;
+  line-height: 100%;
+}
+
+.map .map_mego_warpper .map_left p {
+  color: #999;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.map .map_mego_warpper .map_left .folloUs i {
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: #95E1D3;
+}
+
+.map_center h4 {
+  text-align: start;
+}
+
+.map_center ul {
+  padding-left: 0;
+}
+
+.map_center ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.map_center ul li p {
+  margin-left: 0.5rem;
+}
+
+.map_blog_list p {
+  color: #2ec06c;
+}
+
+footer {
+  text-align: center;
+  background-color: #F8F8F8;
+  padding: 2rem 0;
+}
+
+footer p {
+  color: #999;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+footer p a {
+  color: #2ec06c;
+}
+/*# sourceMappingURL=style.css.map */

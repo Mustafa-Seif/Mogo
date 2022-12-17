@@ -23,7 +23,7 @@ $linearColor: linear-gradient(
 );
 $yelloColor: rgb(255, 217, 0);
 $lineColor: #f08080;
-$mainColor: #95E1D3;
+$mainColor: #95e1d3;
 $dark: #333;
 $light: #fff;
 $transition: all 0.5s ease-in-out;
@@ -39,16 +39,17 @@ body {
   font-size: 13px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
-  // height: 10000px;
-  
 }
-
 
 li {
   list-style-type: none;
 }
 a {
   text-decoration: none !important;
+  &:hover{
+    color: $light !important;
+
+  }
 }
 
 button,
@@ -88,7 +89,7 @@ input {
       height: 2px;
       background: #f38181;
       transform: translateX(-50%);
-      -moz-transform: translateX(-50%); 
+      -moz-transform: translateX(-50%);
     }
   }
   p {
@@ -114,7 +115,6 @@ input {
 
 // =========== H E A D E R ==========
 
-
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
@@ -123,7 +123,7 @@ input {
 
 header {
   height: 100vh;
-  background-image: url('/assest/images/bg-header.jpg');
+  background-image: url("/assest/images/bg-header.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -142,31 +142,34 @@ header {
     z-index: -1;
   }
 
-  
-
   nav {
     z-index: 5;
     transition: 3s;
 
-    .fixed{
-      top: .2rem;
+    .fixed {
+      top: 0.2rem;
       position: relative;
     }
-      
-      ul {
-        position: absolute;
-        right: 2rem;
-        justify-content: space-between;
+
+    ul {
+      position: absolute;
+      right: 2rem;
+      justify-content: space-between;
       font-weight: 600;
       font-size: 1rem;
       text-transform: uppercase;
-        li {
+      li {
+        margin: 1.1rem 0;
+        margin-right: 2rem;
+        color: $light;
+        a {
           margin: 1.1rem 0;
           margin-right: 2rem;
           color: $light;
         }
       }
-    
+    }
+
     .logo a {
       color: #fff;
       font-weight: bolder;
@@ -176,9 +179,9 @@ header {
     }
   }
 
-  .navScroll{
-    .fixed{
-    background: $linearColor !important;
+  .navScroll {
+    .fixed {
+      background: $linearColor !important;
 
       top: 0rem !important;
       position: fixed !important;
@@ -245,12 +248,13 @@ header {
       width: 100%;
       height: 100%;
       opacity: 0;
-      transition: 1s;
+      transition: 300ms all ease-in-out;
     }
 
     &:hover {
-      left: -10px;
-      top: -10px;
+      transform: translate(-10px, -10px);
+      // left: -10px;
+      // top: -10px;
     }
 
     &:hover .overlayAbout {
@@ -413,7 +417,7 @@ header {
     .blog_card {
       .img_blog_card {
         margin-bottom: 1.5rem;
-        img{
+        img {
           width: 100%;
         }
       }
@@ -435,7 +439,7 @@ header {
 
 .map {
   // margin-bottom: $marginSection;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   .bg_map {
     background-image: url("/assest/images/map/bg-map.jpg") !important;
     padding: 2rem 0;
@@ -463,18 +467,16 @@ header {
         font-weight: 400;
         font-family: "Roboto", sans-serif;
       }
-      .folloUs i{
+      .folloUs i {
         margin-left: 1rem;
         font-size: 1rem;
         color: $mainColor;
-
       }
     }
   }
 }
 
 .map_center {
-  
   h4 {
     text-align: start;
   }
@@ -482,7 +484,7 @@ header {
 
 .map_center {
   ul {
-    padding-left: 0 ;
+    padding-left: 0;
     li {
       display: flex;
       margin-bottom: 0.5rem;
@@ -500,17 +502,17 @@ header {
   }
 }
 
-footer{
+footer {
   text-align: center;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   padding: 2rem 0;
-  p{
+  p {
     color: #999;
     font-size: 13px;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
-    a{
-      color:#2ec06c;
+    a {
+      color: #2ec06c;
     }
   }
 }
